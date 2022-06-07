@@ -176,7 +176,7 @@ p {
     font-family: "meduim";
     text-align: center;
     color: var(--color-white);
-    padding:1%;
+    padding: 1%;
     &:hover {
       background-color: white;
       color: var(--color-secound);
@@ -261,7 +261,7 @@ textarea.form-control {
 }
 
 .form-select {
-  border-radius: 0px ;
+  border-radius: 0px;
   padding: 0.375rem 2.25rem 0.375rem 1.4rem;
   font-family: "regular";
   background-color: var(--color-white);
@@ -291,23 +291,21 @@ input[type="data"] {
   }
 }
 
-.form-check{
- .form-check-input{
-  float: right;
-  margin-left: 5px;
-  &:checked{
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
+.form-check {
+  .form-check-input {
+    float: right;
+    margin-left: 5px;
+    &:checked {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+  .form-check-label {
+    font-size: 1rem;
+    font-family: "regular";
+    color: var(--color-text);
   }
 }
-.form-check-label{
-  font-size: 1rem;
-  font-family: 'regular';
-  color: var(--color-text);
-
-}
-}
-
 
 ::-webkit-calendar-picker-indicator {
   background-color: #ffffff;
@@ -330,22 +328,22 @@ input {
 
 /* delete arrow from input number */
 //modal
-#exampleModal{
-  .modal-dialog{
-   max-width: 43.75rem;
-   .modal-body{
-     h2{
-       font-size: 1.6rem;
-       margin-bottom: 3%;
-     }
-     .button{
-       justify-content: flex-start;
-       .btn{
-        width: 26%;
-       padding: 1%;
-       }
-     }
-   }
+#exampleModal {
+  .modal-dialog {
+    max-width: 43.75rem;
+    .modal-body {
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 3%;
+      }
+      .button {
+        justify-content: flex-start;
+        .btn {
+          width: 26%;
+          padding: 1%;
+        }
+      }
+    }
   }
 }
 
@@ -816,14 +814,14 @@ input {
         margin-right: auto;
         margin-left: 0;
       }
-      &:not(.collapsed){
+      &:not(.collapsed) {
         color: var(--color-primary);
         background-color: rgba($color: #e20613, $alpha: 0.03);
       }
     }
-    .accordion-body{
-      font-family: 'meduim';
-      font-size: .8rem;
+    .accordion-body {
+      font-family: "meduim";
+      font-size: 0.8rem;
       color: var(--color-pargraph);
     }
   }
@@ -933,41 +931,164 @@ footer {
 //finish footer
 
 //start header
-.header{
- background-color: rgba($color: #191e3a, $alpha: 0.03);
- padding: 3% 0;
- a{
-   font-size: 1.2rem;
-   color:var(--color-pargraph);
-   font-family: 'regular';
- }
- i{
-   color: var(--color-pargraph);
- }
- span{
-   font-size: 1rem;
-   color: var(--color-text);
-   font-family: 'regular';
-
- }
+.header {
+  background-color: rgba($color: #191e3a, $alpha: 0.03);
+  padding: 3% 0;
+  a {
+    font-size: 1.2rem;
+    color: var(--color-pargraph);
+    font-family: "regular";
+  }
+  i {
+    color: var(--color-pargraph);
+  }
+  span {
+    font-size: 1rem;
+    color: var(--color-text);
+    font-family: "regular";
+  }
 }
 
 //finish header
 
 //start policy page
-.pravicy{
+.pravicy {
   padding: 5% 0;
   .content {
     padding: 3% 0;
     ul {
       list-style-image: url(../image/checked.png);
       text-align: center;
-      li{
-       font-size: 1rem;
-       text-align: start;
+      li {
+        font-size: 1rem;
+        text-align: start;
       }
     }
   }
 }
 //finish policy page
 
+//account page
+.acounnt_sec {
+  position: relative;
+  padding: 5% 0;
+  .main-title {
+    padding-bottom: 5%;
+  }
+  .card {
+    border-radius: 2px;
+    padding: 3% 2%;
+    .header_card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid #f7f7f7;
+    }
+    .content_card {
+      padding: 2% 0;
+    }
+    .footer_card {
+      padding: 1% 0 3%;
+      .button {
+        .btn {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .button {
+    .btn {
+      width: 26%;
+      padding: 1%;
+    }
+  }
+}
+//account page
+
+//account facebook
+.content_account {
+  position: relative;
+  padding: 5% 0;
+  .img {
+    width: 9rem;
+    height: 8.125rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .summery {
+    .header_summery {
+      padding-bottom: 4%;
+      span {
+        font-size: 1rem;
+        color: var(--color-pargraph);
+        font-family: "regular";
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+      .parg {
+        text-align: start;
+        span {
+          color: var(--color-text);
+        }
+      }
+    }
+    .summery_content {
+      .text {
+        font-size: 1.1rem;
+      }
+      ul {
+        list-style-image: url(../image/dot.png);
+        li {
+          text-align: start;
+          font-size: 1rem;
+        }
+      }
+    }
+    .footer_summery {
+      padding-top: 5%;
+      .form-select {
+        padding: 0.375rem 0.45rem 0.75rem 0.4rem;
+        text-align: center;
+      }
+      .button {
+        margin-top: 0;
+       
+      }
+    }
+  }
+}
+//account facebook
+
+//buy account
+.buy_account {
+  position: relative;
+  padding: 1%;
+  margin-top: 4%;
+  .header {
+    padding: 1%;
+    .img {
+      width: 16rem;
+      height: 14.125rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: start;
+      padding-bottom: 2%;
+    }
+  }
+}
+//buy account
+
+//login 
+
+//login
