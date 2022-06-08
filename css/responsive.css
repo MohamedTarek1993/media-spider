@@ -1,203 +1,80 @@
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  .navbar
-    .navbar-collapse
-    .navbar-nav
-    .nav-item
-    .dropdown_service
-    .dropdown_item_service {
-    width: 33%;
+  .filter_section .box-menu ul li{
+    width: calc(100% / 5);
+    margin-bottom: 3%;
   }
-  .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_service {
-    width: 400px;
-    overflow-x: scroll;
-   
+  .filter_section .box-menu ul li .mega_button{
+    width: 30.625rem;
   }
-  .hero_section .swiper .swiper-slide .text_slider {
-    right: 9%;
-    width: 70%;
-    top: 20%;
+  .filter_section .mega_menu {
+    top: 30%;
   }
-  .team_section
-    .swiper
-    .swiper-slide
-    .container_card
-    .box-1
-    .caption-1:hover
-    a {
-    transform: translate(-67px, 3px);
+  .filter_section .box-list{
+    margin: 2%;
   }
- 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 1023.98px) {
-  .navbar-collapse {
-    overflow-x: scroll;
+  .filter_section .box-menu ul li .mega_button{
+    width: 24.625rem;
   }
-  .service_section .content {
-    margin-bottom: 9%;
+  .how_work .boxes .box::after{
+    top: 25%;
+    left: 12%;
   }
-  .hero_section .swiper .swiper-slide .text_slider {
-    top: 22%;
+  footer .social_icon{
+    justify-content: center;
   }
-  .hero_section .swiper .swiper-slide .text_slider p {
-    font-size: 1.5rem;
-    padding-left: 12%;
-  }
-  .hero_section .swiper .swiper-slide .text_slider .button .btn {
-    width: 70%;
-    padding: 3% 2%;
-  }
-  .why_choise figure {
+  footer .lower_footer p{
     text-align: center;
   }
-  .why_choise figure img {
-    height: 250px;
-    width: 50%;
-  }
-  .why_choise .block .button .btn {
-    width: 35%;
-    font-size: 0.9rem;
-  }
-  .counter_section {
-    padding: 5% 0;
-  }
-  .team_section
-    .swiper
-    .swiper-slide
-    .container_card
-    .box-1
-    .caption-1:hover
-    a {
-    transform: translate(-67px, 3px);
-  }
-  .blog_home .box {
-    width: 60%;
-    margin: 4% auto;
-    text-align: center;
-  }
-  .counter_section .boxes .box .img {
-    width: 55px;
-    height: 37px;
-  }
-  .counter_section .boxes .box .content .counter{
-    font-size: 1.9rem;
-  }
-  .counter_section .boxes .box .content i{
-    font-size: 1.4rem;
-  }
-  .navbar-collapse {
-    background: rgba( 16, 34, 46 , .5);
-  }
-  .navbar .navbar-collapse .navbar-nav ,.navbar .navbar-collapse .inquery_btn{
+  footer .footer_logo{
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
-  .navbar .navbar-collapse .navbar-nav .nav-item{
-    text-align: center;
-  }
- .dropdown{
-   text-align: center;
-   margin-bottom: 10%;
- }
- .navbar .navbar-collapse .inquery_btn .first{
-   padding: 1%;
- }
- footer .comuncation_information .boxes .box .icon_footer {
-   width: 10%;
- }
- .dropdown-menu[data-bs-popper]{
-   left: 45%;
- }
- .our_vision .boxes .box::before{
-   top: 35%;
- }
- .connect_us .boxes{
-   padding: 10px 0;
- }
- .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after{
-    animation-duration: .1s !important;
- }
- 
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
-  .counter_section .boxes {
+  .filter_section .box-menu ul li .mega_button{
+    width: 10.625rem;
+  }
+  .filter_section .box-menu ul{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   }
-  .counter_section .boxes .box .img {
-    width: 48px;
-    height: 38px;
+  .filter_section .box-menu ul li{
+ width: calc(100% / 2) !important; 
   }
-  .counter_section .boxes .box .content i {
-    font-size: 1rem;
-  }
-  .counter_section .boxes .box .content .counter {
-    font-size: 1.25rem;
-  }
-  .counter_section .boxes .box {
-    width: 50%;
-    margin-bottom: 3%;
-  }
-  .counter_section .boxes .box {
-    padding: 5% 0;
-  }
-  .main-title h2 {
-    font-size: 1.25rem;
-  }
-  .main-title p {
-    padding: 2% 5%;
-    font-size: 0.8rem;
-  }
-  .why_choise .block {
-    padding: 3% 1%;
-  }
-  .why_choise .block h2 {
-    font-size: 1.25rem;
-  }
-  .why_choise .block p{
-    font-size: 1rem;
-  }
-  .hero_section .swiper .swiper-slide .text_slider p{
-    font-size: 1rem;
-  }
-  .hero_section .swiper .swiper-slide .text_slider{
-    right: 15%;
-    top: 30%;
-  }
-  .hero_section .swiper .swiper-slide .text_slider .button{
-    width: 100%;
-  }
-  .hero_section .swiper .swiper-slide .text_slider .button .btn{
-    width: 75%;
-  }
-  .why_choise figure img{
-    width: 80%;
-  }
-  .team_section .swiper .swiper-slide .container_card .box-1 img{
-    height: 250px;
-  }
-  .blog_home .box{
-    width: 85%;
-  }
-  .why_choise .block .button{
-    justify-content: center;
-  }
-  footer .lower_footer{
+  .filter_section .mega_menu .boxes_mega_menu ,.filter_section .mega_menu .boxes_mega_menu .list_mega{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .our_vision .boxes .box::before{
+  .filter_section .mega_menu .boxes_mega_menu .list_mega a{
+    width: 99%;
+  }
+  .filter_section .mega_menu{
+    top: 100%;
+  }
+  .how_work .boxes{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .how_work .boxes .box{
+    width: 60%;
+  }
+  .how_work .boxes .box::after{
     display: none;
   }
-  .our_vision .boxes{
-    flex-direction: column;
+  .accordion-button{
+    text-align: right;
+    font-size: .6rem;
   }
-  header .content h1{
-    font-size: 3rem;
-  }
+
 }

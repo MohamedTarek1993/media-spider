@@ -28,7 +28,7 @@
 
 <body>
     <!---------------------- start loader -------------------------------------------->
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
     <!---------------------- finish loader -------------------------------------------->
     <!---------------------- start scroll-up -------------------------------------------->
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
@@ -50,13 +50,13 @@
                         <a class="nav-link" href="index.html">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html"> سياسة الاستخدام</a>
+                        <a class="nav-link" href="policy.html"> سياسة الاستخدام</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="important-information.html">معلومات مهمة</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> الدعم</a>
+                        <a class="nav-link" href="support.html"> الدعم</a>
                     </li>
                 </ul>
                 <div class=" button sign_button">
@@ -67,8 +67,8 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         English
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">العربية</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item text-light" href="#">العربية</a></li>
                     </ul>
                 </div>
 
@@ -78,7 +78,95 @@
     <!-- =========== ? NavBar =========== -->
 
     <!-- =========== ? hero section =========== -->
+    <section class="hero_section">
+        <div class="swiper mySwiper-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img">
+                        <div class="overlay">
+                        </div>
+                        <img src="image/slider5 (1).jpg" alt="slider1">
+                    </div>
+                    <div class="text_slider" data-aos="fade-up" data-aos-duration="2000">
+                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
+                            الممتدة وعملنا الجماعي</p>
+                        <div class="button">
+                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="swiper-slide">
+                    <div class="img">
+                        <div class="overlay">
+                        </div>
+                        <img src="image/slider5 (2).jpg" alt="slider1">
+                    </div>
+
+                    <div class="text_slider" >
+                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
+                            الممتدة وعملنا الجماعي</p>
+                        <div class="button">
+                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="text_slider">
+                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
+                            الممتدة وعملنا الجماعي</p>
+                        <div class="button">
+                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="overlay">
+                        </div>
+                        <img src="image/slide2 (2).jpg" alt="slider1">
+                    </div>
+
+
+
+                </div>
+                 <div class="swiper-slide">
+                    <div class="img">
+                        <div class="overlay">
+                        </div>
+                        <img src="image/hero.png    " alt="slider1">
+                    </div>
+
+                    <div class="text_slider">
+                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
+                            الممتدة وعملنا الجماعي</p>
+                        <div class="button">
+                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
+                        </div>
+                    </div>
+
+                </div> 
+                <div class="swiper-slide">
+                    <div class="img">
+                        <div class="overlay">
+                        </div>
+                        <img src="image/slider5 (2).jpg" alt="slider1">
+                    </div>
+
+                    <div class="text_slider" >
+                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
+                            الممتدة وعملنا الجماعي</p>
+                        <div class="button">
+                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
+                        </div>
+                    </div>
+
+                </div> 
+
+            </div>
+            <div class="swiper-button-next"><i class="bi bi-arrow-left"></i></div>
+            <div class="swiper-button-prev"><i class="bi bi-arrow-right"></i></div>
+        </div>
+    </section>
 
     <!-- =========== ? hero section =========== -->
 
@@ -110,11 +198,9 @@
                             <li data-filter=".telegrame"> <button class="nav-link text">Telegram <i
                                         style="color: #32B4FF;" class="bi bi-telegram"></i></button></li>
                             <li>
-                                <div class="input-group" onclick="show_mega()">
+                                <div class="mega_button" onclick="show_mega()" id="mega_button">
                                     <span class="icon_filter"><i class="bi bi-list-ul"></i></span>
-                                    <select type="text" class="form-select" placeholder="اختر التصنيف">
-                                        <option value="1">اختر التصنيف</option>
-                                    </select>
+                                    <span class="arrow_mega"><i class="bi bi-chevron-down"></i></span>
                                 </div>
                             </li>
                         </ul>
@@ -261,7 +347,7 @@
                 <div class="row box-list">
 
                     <!-- facebook -->
-                    <div class="col-lg-4 col-md-4 col-12 mix box-item facebook ">
+                    <div class="col-lg-4 col-md-6 col-12 mix box-item facebook ">
                         <div class="card">
                             <div class="header_card">
                                 <h6 class="text"><i style="color:#475993 ;" class="bi bi-facebook"></i>
@@ -277,7 +363,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -302,7 +389,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -327,7 +415,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -351,7 +440,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -376,7 +466,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -401,7 +492,8 @@
                             </div>
                             <div class="footer_card">
                                 <div class="button">
-                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء الآن
+                                    <a href="facebook-account.html" class="first btn"> <i class="bi bi-cart"></i> شراء
+                                        الآن
                                     </a>
                                 </div>
                             </div>
@@ -530,14 +622,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="footer_logo">
                         <a href="index">
                             <img src="image/logo.png" alt="footer_logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <ul class="links">
                         <li><a href="#">ماذا نقدم</a></li>
                         <li><a href="important-information.html">معلومات مهمة</a></li>
@@ -581,13 +673,13 @@
                     <form action="">
 
                         <div class="input-group row">
-                            <div class="col-2">
+                            <div class="col-lg-2 col-12">
                                 <div class="form-label">
                                     نوع التذكرة
                                 </div>
                             </div>
 
-                            <div class="col-10">
+                            <div class="col-lg-10 col-12">
                                 <select class="form-select">
                                     <option value="1">..... اختر نوع التذكرة</option>
                                     <option value="2">100</option>
@@ -596,23 +688,23 @@
                         </div>
 
                         <div class="input-group row">
-                            <div class="col-2">
+                            <div class="col-lg-2 col-12">
                                 <div class="form-label">
                                     رقم الهاتف
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-lg-10 col-12">
                                 <input type="number" class="form-control" placeholder="رقم هاتف واتس آب">
                             </div>
                         </div>
 
                         <div class="input-group row">
-                            <div class="col-2">
+                            <div class="col-lg-2 col-12">
                                 <div class="form-label">
                                     نص الرسالة
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-lg-10 col-12">
                                 <textarea class="form-control" placeholder=" ..... اكتب نص الرسالة هنا"> </textarea>
                             </div>
                         </div>
@@ -630,7 +722,7 @@
 
                     </form>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -672,8 +764,11 @@
 
     <script>
         let mega = document.getElementById('mega_menu');
+        let megButton = document.getElementById('mega_button');
         function show_mega() {
+            megButton.classList.toggle('show');
             mega.classList.toggle('show');
+           
         }
     </script>
 </body>
