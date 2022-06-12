@@ -48,6 +48,9 @@
   .hero_section .swiper .swiper-slide .slope_shape {
     height: 60%;
   }
+  .hero_section .swiper .swiper-slide .img img{
+    width: 50%;
+  }
  .dropdown-lang .dropdown-menu[data-bs-popper]{
     left: 88%;
   }
@@ -132,7 +135,11 @@ left: 27%;
   height: 35px;
 }
 .form-control {
-  padding: 9%;
+  padding-right: 9%;
+}
+.buy_account .header .img{
+  width: 9rem;
+    height: 7.125rem;
 }
 }
 @media (max-width: 1000px) {
