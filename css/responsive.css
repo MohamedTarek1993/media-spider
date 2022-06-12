@@ -1,80 +1,183 @@
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  .filter_section .box-menu ul li{
+  .filter_section .box-menu ul li {
     width: calc(100% / 5);
     margin-bottom: 3%;
   }
-  .filter_section .box-menu ul li .mega_button{
+  .filter_section .box-menu ul li .mega_button {
     width: 30.625rem;
   }
   .filter_section .mega_menu {
-    top: 30%;
+  width: 55rem;
   }
-  .filter_section .box-list{
+  .filter_section .box-list {
     margin: 2%;
+  }
+  .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div{
+    left: 10%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 1023.98px) {
-  .filter_section .box-menu ul li .mega_button{
+  .filter_section .box-menu ul li .mega_button {
     width: 24.625rem;
   }
-  .how_work .boxes .box::after{
+  .how_work .boxes .box::after {
     top: 25%;
     left: 12%;
   }
-  footer .social_icon{
+  footer .social_icon {
     justify-content: center;
   }
-  footer .lower_footer p{
+  footer .lower_footer p {
     text-align: center;
   }
-  footer .footer_logo{
+  footer .footer_logo {
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
   }
+  .hero_section .swiper .swiper-slide .shape_mob {
+    display: none;
+  }
+  .hero_section .swiper .swiper-slide .img img,
+  .hero_section .swiper .swiper-slide .slope_shape {
+    height: 60%;
+  }
+ .dropdown-lang .dropdown-menu[data-bs-popper]{
+    left: 88%;
+  }
+  .filter_section .mega_menu {
+    width: 36rem;
+  }
+  .upl{
+    height: 200px;
+  }
+  .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div{
+    left: 37%;
+    top: -3%;
+  }
+  .personal_account .tab-content .tab-pane .my_account .personal_id .content form #uploadBtn{
+    bottom: 0%;
+    width: 30%;
+    left: 48%;
+  }
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
-  .filter_section .box-menu ul li .mega_button{
+  .filter_section .box-menu ul li .mega_button {
     width: 10.625rem;
   }
-  .filter_section .box-menu ul{
+  .filter_section .box-menu ul {
     flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-  .filter_section .box-menu ul li{
- width: calc(100% / 2) !important; 
+  .filter_section .box-menu ul li {
+    width: calc(100% / 2) !important;
   }
-  .filter_section .mega_menu .boxes_mega_menu ,.filter_section .mega_menu .boxes_mega_menu .list_mega{
+  .filter_section .mega_menu .boxes_mega_menu,
+  .filter_section .mega_menu .boxes_mega_menu .list_mega {
     flex-direction: column;
   }
-  .filter_section .mega_menu .boxes_mega_menu .list_mega a{
+  .filter_section .mega_menu .boxes_mega_menu .list_mega a {
     width: 99%;
   }
-  .filter_section .mega_menu{
+  .filter_section .mega_menu {
     top: 100%;
   }
-  .how_work .boxes{
+  .how_work .boxes {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .how_work .boxes .box{
+  .how_work .boxes .box {
     width: 60%;
   }
-  .how_work .boxes .box::after{
+  .how_work .boxes .box::after {
     display: none;
   }
-  .accordion-button{
+  .accordion-button {
     text-align: right;
-    font-size: .6rem;
+    font-size: 0.6rem;
+  }
+  .button .first {
+    padding: 4% 1%;
+  }
+  .main-title h2{
+    font-size: 1.4rem;
+  }
+  .how_work .boxes .box span{
+    font-size: 1.5rem;
+  }
+  .how_work .boxes .box::before{
+    display: none;
+  }
+  .filter_section .mega_menu{
+  width: 14rem;
+  }
+  .personal_account .tab-content .tab-pane .tickets_section .ticket_box .replay .box{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div {
+left: 27%;
+}
+.personal_account .tab-content .tab-pane .my_account .personal_id .content form #uploadBtn{
+  height: 35px;
+}
+.form-control {
+  padding: 9%;
+}
+}
+@media (max-width: 1000px) {
+  /* responsive tabel */
+  .table thead {
+    display: none;
   }
 
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 97%;
+  }
+  .table tbody tr {
+    border: none;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    text-align: left !important;
+    padding-right: 2%;
+    padding-left: 2%;
+display: inline-grid;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 0;
+    width: 31%;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+  }
+
+  .table tbody td span {
+    padding: 3% 3%;
+  }
+  table tbody th,
+  table tbody th,
+  table tbody td {
+    border-top: none !important;
+  }
+  /* responsive tabel */
 }

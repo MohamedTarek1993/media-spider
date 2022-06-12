@@ -24,20 +24,30 @@
     <!-- ? Favicon -->
     <link rel="icon" href="./image/logo.png" type="image" />
     <!-- ? Favicon -->
+    <style>
+        .slope_shape {
+           
+            left: 5px;
+            top: 10%;
+            width: 50%;
+            height: 100px;
+            border: 1px solid black;
+            clip-path: polygon(0 1%, 65% 0, 100% 100%, 0% 100%);
+            z-index: 100;
+
+        }
+
+        .slope {
+            background-color: var(--color-primary);
+
+        }
+    </style>
 </head>
 
 <body>
-    <section class="service_section" >
-        <div class="container">
-            <div class="img">
-                <img src="" alt="img">
-            </div>
-            <h2 class="text-center py-4"> title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus consequatur alias adipisci!
-                Quas unde atque at? Adipisci iusto, deleniti quod obcaecati, nisi quasi, quas eligendi dignissimos
-                reprehenderit itaque minus?</p>
-        </div>
-    </section>
+    <div class="slope_shape">
+        <div class="slope"></div>
+    </div>
     <!-- finish uses case-->
 
     <script src="js/bootstrap.min.js"></script>

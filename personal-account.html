@@ -24,11 +24,76 @@
 </head>
 
 <body>
+      <!---------------------- start loader -------------------------------------------->
+      <div id="preloader"></div>
+      <!---------------------- finish loader -------------------------------------------->
+      <!---------------------- start scroll-up -------------------------------------------->
+      <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+      <!---------------------- finish scroll-up -------------------------------------------->
+  
+      <!-- =========== ? NavBar =========== -->
+      <nav class="navbar navbar-expand-lg" id="navbar">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="image/logo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html">الرئيسية</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="policy.html"> سياسة الاستخدام</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="important-information.html">معلومات مهمة</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="support.html"> الدعم</a>
+                      </li>
+                  </ul>
+                  <div class=" button sign_button">
+                      <!-- في حاله عدم التسجيل -->
+                      <!-- <a href="inqury.html" class="btn first">حساب جديد</a> -->
+                      <!-- في حاله عدم التسجيل -->
+                      <!-- في حاله  التسجيل -->
+                      <div class="dropdown ">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           أواب محمد
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="personal-account.html">طلباتي</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">التذاكر</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">حسابي</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">الأشعارات</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                          </ul>
+                        </div>
+                      <!-- في حاله  التسجيل -->
+                  </div>
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          English
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item text-light" href="#">العربية</a></li>
+                      </ul>
+                  </div>
+  
+              </div>
+          </div>
+      </nav>
+      <!-- =========== ? NavBar =========== -->
     <!-- =========== ? header  section =========== -->
     <section class="header">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <a href="index.html"> الرئيسية</a>
                     <i class="bi bi-chevron-left"></i>
                     <span> الحساب الشخصي</span>
@@ -49,7 +114,7 @@
                             aria-selected="true"><i class="bi bi-cart"></i> طلباتي </button>
                         <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="false"> <i class="bi bi-ticket"></i>التزاكر</button>
+                            aria-selected="false"> <i class="bi bi-ticket"></i>التذاكر</button>
                         <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
                             aria-selected="false"> <i class="bi bi-person"></i>حسابي</button>
@@ -61,12 +126,103 @@
 
                     </div>
                 </div>
+
                 <div class="col-lg-9 col-12">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                            aria-labelledby="v-pills-home-tab">...</div>
+                            aria-labelledby="v-pills-home-tab">
+                            <div class="order_section">
+                                <div class="main-title">
+                                    <h6 class="text">طلباتك</h6>
+                                    <p>آخر 10 طلبات قمت بها </p>
+                                </div>
+                                <div class="order_tabel">
+                                    <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                                        <thead>
+                                            <tr>
+                                                <th>رقم الطلب</th>
+                                                <th> الاسم</th>
+                                                <th> تاريخ الطلب</th>
+                                                <th> التكلفة</th>
+                                                <th> الدفع </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td data-label="رقم الطلب">#251422 </td>
+                                                <td data-label=" الاسم"> لايكات لمنشور فيسبوك [اعجبني 👍 - تعمل على البث
+                                                    المباشر] [حسابات اجنبية مكس] [سيرفر #3
+                                                    وقت البدا: سريع جدا] [سيرفر #1]</td>
+                                                <td data-label=" تاريخ الطلب">مارس22 , 2022</td>
+                                                <td data-label=" التكلفة">
+                                                    122 جنيه</td>
+                                                <td data-label=" الدفع">
+                                                    فودافون كاش</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td data-label="رقم الطلب">#251422 </td>
+                                                <td data-label=" الاسم"> لايكات لمنشور فيسبوك [اعجبني 👍 - تعمل على البث
+                                                    المباشر] [حسابات اجنبية مكس] [سيرفر #3
+                                                    وقت البدا: سريع جدا] [سيرفر #1]</td>
+                                                <td data-label=" تاريخ الطلب">مارس22 , 2022</td>
+                                                <td data-label=" التكلفة">
+                                                    122 جنيه</td>
+                                                <td data-label=" الدفع">
+                                                    فودافون كاش</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                            aria-labelledby="v-pills-profile-tab">...</div>
+                            aria-labelledby="v-pills-profile-tab">
+                            <div class="tickets_section">
+                                <div class="main-title">
+                                    <h6 class="text">التذاكر</h6>
+                                    <p>كل التذاكر التي قمت بها</p>
+                                </div>
+                                <!-- <div class="not_exist">
+                                   <p class="parg">ليس لديك تزاكر حالية </p>
+                                </div> -->
+                                <div class="ticket_box">
+                                    <div class="box_inquery">
+                                        <h3 class="text">استفسار عن طريقة اكمال الشراء ؟</h3>
+                                        <p class="parg">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                            هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                                            النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج
+                                            إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
+                                            النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي
+                                            المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                                            حقيقية لتصميم الموقع.
+                                        </p>
+                                        <div class="cole">
+                                            <span>استفسار</span>
+                                            <span>#256</span>
+                                            <span><i class="bi bi-chat-left-dots"></i> 4</span>
+                                        </div>
+                                    </div>
+                                    <div class="replay">
+                                        <h3 class="text">كل الردود</h3>
+                                        <div class="box">
+                                            <div> <img src="image/pp.png" alt="">
+                                                <h6 class="text">تم الرد عليك على التزكرة التي قمت بارسالها من قبل ادراة
+                                                    الموقع</h6>
+                                            </div>
+                                            <span class="parg">منذ ساعتين</span>
+                                        </div>
+                                        <p class="parg">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                            هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                                            النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                             aria-labelledby="v-pills-messages-tab">
                             <div class="my_account">
@@ -168,7 +324,51 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab">...</div>
+                            aria-labelledby="v-pills-settings-tab">
+                            <div class="notfication_section">
+                                <!-- ف حالة عدم وجود اشعارات -->
+                                <!-- <div class="not_exist">
+                                       <h2 class="text">ليس لديك اشعارات حاليا</h2>
+                                    </div> -->
+                                <!-- ف حالة عدم وجود اشعارات -->
+                                <!-- ف حالة  وجود اشعارات -->
+                                <div class="notfication_exist">
+                                    <h2 class="text">الاشعارات</h2>
+
+                                    <div class="notfication_box">
+                                        <span class="parg">اليوم</span>
+                                        <div class="box">
+                                            <div> <img src="image/pp.png" alt="">
+                                                <h6 class="text">تم الرد عليك على التزكرة التي قمت بارسالها من قبل ادراة
+                                                    الموقع</h6>
+                                            </div>
+                                            <span class="parg">منذ ساعتين</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="notfication_box">
+                                        <span class="parg">الأمس</span>
+                                        <div class="box">
+                                            <div> <img src="image/pp.png" alt="">
+                                                <h6 class="text">تم الرد عليك على التزكرة التي قمت بارسالها من قبل ادراة
+                                                    الموقع</h6>
+                                            </div>
+                                            <span class="parg">منذ ساعتين</span>
+                                        </div>
+                                        <div class="box">
+                                            <div> <img src="image/pp.png" alt="">
+                                                <h6 class="text">تم الرد عليك على التزكرة التي قمت بارسالها من قبل ادراة
+                                                    الموقع</h6>
+                                            </div>
+                                            <span class="parg">منذ ساعتين</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ف حالة  وجود اشعارات -->
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
 
@@ -187,7 +387,46 @@
         </div>
     </section>
     <!-- =========== ?  new tiket  section =========== -->
+   <!-- =========== ? footer =========== -->
+   <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer_logo">
+                    <a href="index">
+                        <img src="image/logo.png" alt="footer_logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <ul class="links">
+                    <li><a href="#">ماذا نقدم</a></li>
+                    <li><a href="important-information.html">معلومات مهمة</a></li>
+                    <li><a href="#">الدعم</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+                <ul class="social_icon">
+                    <li><a target="__blank" href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a></li>
 
+                    <li><a target="__blank" href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a></li>
+
+                    <li><a target="__blank" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower_footer">
+            <p class="parg">mediaspider@2022 . All Right Reserved</p>
+        </div>
+    </div>
+</footer>
+<!-- =========== ? footer =========== -->
     <!-- =========== ? ticket modal =========== -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

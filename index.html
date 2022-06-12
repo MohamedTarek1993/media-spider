@@ -60,9 +60,26 @@
                     </li>
                 </ul>
                 <div class=" button sign_button">
-                    <a href="inqury.html" class="btn first">حساب جديد</a>
+                    <!-- في حاله عدم التسجيل -->
+                    <!-- <a href="inqury.html" class="btn first">حساب جديد</a> -->
+                    <!-- في حاله عدم التسجيل -->
+                    <!-- في حاله  التسجيل -->
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            أواب محمد
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="personal-account.html">طلباتي</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">التذاكر</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">حسابي</a></li>
+                            <li><a class="dropdown-item" href="personal-account.html">الأشعارات</a></li>
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                    <!-- في حاله  التسجيل -->
                 </div>
-                <div class="dropdown">
+                <div class="dropdown dropdown-lang">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         English
@@ -83,84 +100,41 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="img">
-                        <div class="overlay">
-                        </div>
-                        <img src="image/slider5 (1).jpg" alt="slider1">
+                        <img src="image/hero.jpg" alt="slider1">
                     </div>
-                    <div class="text_slider" data-aos="fade-up" data-aos-duration="2000">
-                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
-                            الممتدة وعملنا الجماعي</p>
-                        <div class="button">
-                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
-                        </div>
+                    <div class="slope_shape">
+                    </div>
+                    <div class="shape_mob">
+                        <img src="image/2973.png" alt="shape">
                     </div>
 
                 </div>
                 <div class="swiper-slide">
                     <div class="img">
-                        <div class="overlay">
-                        </div>
-                        <img src="image/slider5 (2).jpg" alt="slider1">
+                        <img src="image/hero2.jpg" alt="slider1">
                     </div>
-
-                    <div class="text_slider" >
-                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
-                            الممتدة وعملنا الجماعي</p>
-                        <div class="button">
-                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
-                        </div>
+                    <div class="slope_shape">
+                    </div>
+                    <div class="shape_mob">
+                        <img src="image/2973.png" alt="shape">
                     </div>
 
                 </div>
                 <div class="swiper-slide">
-                    <div class="text_slider">
-                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
-                            الممتدة وعملنا الجماعي</p>
-                        <div class="button">
-                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
-                        </div>
-                    </div>
                     <div class="img">
-                        <div class="overlay">
-                        </div>
-                        <img src="image/slide2 (2).jpg" alt="slider1">
+                        <img src="image/hero.jpg" alt="slider1">
                     </div>
-
-
+                    <div class="slope_shape">
+                    </div>
+                    <div class="shape_mob">
+                        <img src="image/2973.png" alt="shape">
+                    </div>
 
                 </div>
-                 <div class="swiper-slide">
-                    <div class="img">
-                        <div class="overlay">
-                        </div>
-                        <img src="image/hero.png    " alt="slider1">
-                    </div>
 
-                    <div class="text_slider">
-                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
-                            الممتدة وعملنا الجماعي</p>
-                        <div class="button">
-                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
-                        </div>
-                    </div>
 
-                </div> 
-                <div class="swiper-slide">
-                    <div class="img">
-                        <div class="overlay">
-                        </div>
-                        <img src="image/slider5 (2).jpg" alt="slider1">
-                    </div>
 
-                    <div class="text_slider" >
-                        <p>ماستـــــــــــري للمحـــــــاماة لتسهيل كل الحلول القانونية من خلال خبراتنا المهنية
-                            الممتدة وعملنا الجماعي</p>
-                        <div class="button">
-                            <a href="about-us.html" class="first btn">اعرف المزيد</a>
-                        </div>
-                    </div>
 
-                </div> 
 
             </div>
             <div class="swiper-button-next"><i class="bi bi-arrow-left"></i></div>
@@ -201,6 +175,139 @@
                                 <div class="mega_button" onclick="show_mega()" id="mega_button">
                                     <span class="icon_filter"><i class="bi bi-list-ul"></i></span>
                                     <span class="arrow_mega"><i class="bi bi-chevron-down"></i></span>
+                                    <!-- mega menu -->
+                                    <div class="mega_menu" id="mega_menu">
+                                        <div class="boxes_mega_menu">
+
+                                            <div class="list_face_mega list_mega">
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/facebook.png" alt="">
+                                                        <h6 class="text">
+                                                            خدمات الفيسبوك</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/facebook.png" alt="">
+                                                        <h6 class="text">
+                                                            خدمات الفيسبوك</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/facebook.png" alt="">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/facebook.png" alt="">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="list_twiiter_mega list_mega">
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/twiter.png" alt="">
+                                                        <h6 class="text">
+                                                            خدمات انستجرام</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/twiter.png" alt="">
+                                                        <h6 class="text">
+                                                            خدمات انستجرام</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/twiter.png" alt="">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/twiter.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="list_instgramm_mega list_mega">
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/instgramm.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            خدمات انستجرام</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/instgramm.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            خدمات انستجرام</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/instgramm.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/instgramm.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="list_linked_mega list_mega">
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/linkedin.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            خدمات اللينكد ان</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/linkedin.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            خدمات اللينكد ان</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/linkedin.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                                <a href="account.html">
+                                                    <div class="box">
+                                                        <img src="image/linkedin.png" alt="instgramm">
+                                                        <h6 class="text">
+                                                            لايكات وكومنتات</h6>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <!-- mega menu -->
                                 </div>
                             </li>
                         </ul>
@@ -209,139 +316,7 @@
                 </div>
 
 
-                <!-- mega menu -->
-                <div class="mega_menu" id="mega_menu">
-                    <div class="boxes_mega_menu">
 
-                        <div class="list_face_mega list_mega">
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/facebook.png" alt="">
-                                    <h6 class="text">
-                                        خدمات الفيسبوك</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/facebook.png" alt="">
-                                    <h6 class="text">
-                                        خدمات الفيسبوك</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/facebook.png" alt="">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/facebook.png" alt="">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="list_twiiter_mega list_mega">
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/twiter.png" alt="">
-                                    <h6 class="text">
-                                        خدمات انستجرام</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/twiter.png" alt="">
-                                    <h6 class="text">
-                                        خدمات انستجرام</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/twiter.png" alt="">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/twiter.png" alt="instgramm">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="list_instgramm_mega list_mega">
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/instgramm.png" alt="instgramm">
-                                    <h6 class="text">
-                                        خدمات انستجرام</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/instgramm.png" alt="instgramm">
-                                    <h6 class="text">
-                                        خدمات انستجرام</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/instgramm.png" alt="instgramm">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/instgramm.png" alt="instgramm">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="list_linked_mega list_mega">
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/linkedin.png" alt="instgramm">
-                                    <h6 class="text">
-                                        خدمات اللينكد ان</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/linkedin.png" alt="instgramm">
-                                    <h6 class="text">
-                                        خدمات اللينكد ان</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/linkedin.png" alt="instgramm">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                            <a href="account.html">
-                                <div class="box">
-                                    <img src="image/linkedin.png" alt="instgramm">
-                                    <h6 class="text">
-                                        لايكات وكومنتات</h6>
-                                </div>
-                            </a>
-                        </div>
-
-                        </a>
-
-                    </div>
-                </div>
-                <!-- mega menu -->
 
                 <!-- filter content -->
                 <div class="row box-list">
@@ -657,7 +632,6 @@
             </div>
         </div>
     </footer>
-
     <!-- =========== ? footer =========== -->
 
     <!-- =========== ? ticket modal =========== -->
@@ -753,6 +727,25 @@
     </script>
     <!-- animation -->
 
+    <!-- hero slider -->
+    <script>
+        var swiper = new Swiper(".mySwiper-3", {
+            loop: true,
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 2200,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- hero slider -->
+
+
     <!-- mixitops -->
     <script src="js/mixtup.js"></script>
     <script>
@@ -768,7 +761,7 @@
         function show_mega() {
             megButton.classList.toggle('show');
             mega.classList.toggle('show');
-           
+
         }
     </script>
 </body>
