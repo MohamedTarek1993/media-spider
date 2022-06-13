@@ -9,12 +9,19 @@
     width: 30.625rem;
   }
   .filter_section .mega_menu {
-  width: 55rem;
+    width: 55rem;
   }
   .filter_section .box-list {
     margin: 2%;
   }
-  .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div{
+  .personal_account
+    .tab-content
+    .tab-pane
+    .my_account
+    .personal_id
+    .content
+    form
+    .profile-pic-div {
     left: 10%;
   }
 }
@@ -48,23 +55,36 @@
   .hero_section .swiper .swiper-slide .slope_shape {
     height: 60%;
   }
-  .hero_section .swiper .swiper-slide .img img{
-    width: 50%;
+  .hero_section .swiper .swiper-slide .img img {
   }
- .dropdown-lang .dropdown-menu[data-bs-popper]{
+  .dropdown-lang .dropdown-menu[data-bs-popper] {
     left: 88%;
   }
   .filter_section .mega_menu {
     width: 36rem;
   }
-  .upl{
+  .upl {
     height: 200px;
   }
-  .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div{
+  .personal_account
+    .tab-content
+    .tab-pane
+    .my_account
+    .personal_id
+    .content
+    form
+    .profile-pic-div {
     left: 37%;
     top: -3%;
   }
-  .personal_account .tab-content .tab-pane .my_account .personal_id .content form #uploadBtn{
+  .personal_account
+    .tab-content
+    .tab-pane
+    .my_account
+    .personal_id
+    .content
+    form
+    #uploadBtn {
     bottom: 0%;
     width: 30%;
     left: 48%;
@@ -73,7 +93,7 @@
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
   .filter_section .box-menu ul li .mega_button {
-    width: 10.625rem;
+    width: 10.825rem;
   }
   .filter_section .box-menu ul {
     flex-direction: column;
@@ -111,36 +131,74 @@
   .button .first {
     padding: 4% 1%;
   }
-  .main-title h2{
+  .main-title h2 {
     font-size: 1.4rem;
   }
-  .how_work .boxes .box span{
+  .how_work .boxes .box span {
     font-size: 1.5rem;
   }
-  .how_work .boxes .box::before{
+  .how_work .boxes .box::before {
     display: none;
   }
-  .filter_section .mega_menu{
-  width: 14rem;
+  .filter_section .mega_menu {
+    width: 14rem;
   }
-  .personal_account .tab-content .tab-pane .tickets_section .ticket_box .replay .box{
+  .personal_account .tab-content  .tab-pane .tickets_section .ticket_box .replay .box {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
   }
   .personal_account .tab-content .tab-pane .my_account .personal_id .content form .profile-pic-div {
-left: 27%;
-}
-.personal_account .tab-content .tab-pane .my_account .personal_id .content form #uploadBtn{
-  height: 35px;
-}
-.form-control {
-  padding-right: 9%;
-}
-.buy_account .header .img{
-  width: 9rem;
+    left: 27%;
+  }
+  .personal_account .tab-content .tab-pane .my_account .personal_id .content form
+    #uploadBtn {
+    height: 35px;
+  }
+  .form-control {
+    padding-right: 9%;
+  }
+  .buy_account .header .img {
+    width: 9rem;
     height: 7.125rem;
-}
+  }
+  .hero_section .swiper .swiper-slide .slope_shape {
+    display: none;
+  }
+  .hero_section .swiper .swiper-slide .img {
+    height: 260px;
+  }
+  .hero_section .swiper .swiper-slide .shape_mob {
+    display: block;
+    top: 2%;
+    left: -34%;
+    width: 523px;
+    height: 146px;
+  }
+  .hero_section .swiper .swiper-slide .shape_mob img {
+    animation: move 8s linear infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+    25% {
+      transform: translateY(10px) rotateY(10deg);
+    }
+    50% {
+      transform: translateY(20px) rotateY(20deg);
+    }
+    75% {
+      transform: translateY(10px) rotateY(10deg);
+    }
+    100% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+  }
+  .hero_section .swiper .swiper-button-next, .hero_section .swiper .swiper-button-prev{
+    width: 22px;
+    height: 22px;
+  }
 }
 @media (max-width: 1000px) {
   /* responsive tabel */
@@ -165,7 +223,7 @@ left: 27%;
     text-align: left !important;
     padding-right: 2%;
     padding-left: 2%;
-display: inline-grid;
+    display: inline-grid;
     position: relative;
   }
   .table td::before {
